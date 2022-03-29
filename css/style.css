@@ -30,7 +30,7 @@ html{
 .jumbotron_section{
     height: 25rem;
     /* TEST */
-    background-color: cadetblue;
+    background-color: #1abc9c;
 }
 
 .jumbotron_wrapper{
@@ -42,7 +42,85 @@ html{
 
 /* portfolio */
 .portfolio_section{
-    height: 30rem;
     /* TEST */
+    padding: 3rem 0;
     background-color: chartreuse;
+}
+
+.portfolio_section h2{
+    text-align: center;
+}
+
+/* portfolio common */
+.portfolio_section .img_wrp{
+    width: 100%;
+    height: 22rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+/* media query md */
+@media all and (min-width: 768px) {
+    .portfolio_section .img_wrp{
+        height: 15rem;
+    }
+}
+
+/* media query lg */
+@media all and (min-width: 992px) {
+    .portfolio_section .img_wrp{
+        height: 12rem;
+    }
+}
+
+
+
+/* portfolio house wrap */
+.portfolio_section .house_wrp{
+    /* TEST */
+    background-color:#ba4b63 ;
+}
+
+/* portfolio house wrap */
+.portfolio_section .cake_wrp{
+    /* TEST */
+    background-color:#1ea4b6 ;
+}
+
+/* portfolio tent wrap */
+.portfolio_section .tent_wrp{
+    /* TEST */
+    background-color:#140f0f ;
+}
+
+/* portfolio game wrap */
+.portfolio_section .game_wrp{
+    /* TEST */
+    background-color:#1c83c1 ;
+}
+
+/* portfolio safe wrap */
+.portfolio_section .safe_wrp{
+    /* TEST */
+    background-color:#0e38b5 ;
+}
+
+/* portfolio submarine wrap */
+.portfolio_section .submarine_wrp{
+    /* TEST */
+    background-color:#ccb2a3 ;
+}
+
+/* about section */
+.about_section{
+    background-color:#1abc9c;
+    /* TEST */
+    height: 20rem;
+}
+
+.about_wrap{
+    background-color: cyan;
+    width: 100%;
+    /* TEST */
+    height: 22rem;
 }
