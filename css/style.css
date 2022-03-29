@@ -115,7 +115,7 @@ html{
 .about_section{
     background-color:#1abc9c;
     /* TEST */
-    height: 20rem;
+    /* height: 20rem; */
 }
 
 .about_wrap{
@@ -123,4 +123,31 @@ html{
     width: 100%;
     /* TEST */
     height: 22rem;
+}
+
+/* contact me section  */
+.contactme_section{
+    /* TEST */
+    height: 25rem;
+}
+
+/* info section */
+.info_section{
+    background-color: #3a546d;
+ 
+}
+
+.info_wrap{
+    /* TEST */
+    background-color: red;
+    border: 2px solid green;
+}
+
+/* footer */
+.footer_section{
+    width: 100%;
+    background-color: #2c3e50;
+}
+.footer_wrap{
+    
 }
