@@ -6,6 +6,10 @@ html{
     background-color: aqua;
 }
 
+body{
+    width: 100%;
+}
+
 /* HEADER */
 
 .header_container{
@@ -33,12 +37,41 @@ html{
     background-color: #1abc9c;
 }
 
-.jumbotron_wrapper{
+.ms_jumbotron_wrapper{
     height: 25rem;
     width: 100%;
     /* TEST */
     background-color: coral;
 }
+
+.ms_jumbotron_wrapper .container{
+    text-align: center;
+    color: white;
+}
+
+.ms_jumbotron_wrapper img{
+    width: 40%;
+}
+
+.ms_bootstrap_title h1{
+    text-transform: uppercase;
+    padding:1rem 0;
+}
+
+/* .ms_rule_and_star{
+    height: 2.2rem;
+}
+
+.ms_rule_and_star i{
+    vertical-align: middle;
+}
+
+.ms_rule{
+    margin:1rem 0 ;
+    width: 6rem;
+    height: .2rem;
+    background-color: white; 
+} */
 
 /* portfolio */
 .portfolio_section{
@@ -52,26 +85,32 @@ html{
 }
 
 /* portfolio common */
-.portfolio_section .img_wrp{
+.ms_img_wrp{
     width: 100%;
-    height: 22rem;
-    border-radius: 10px;
+    border-radius: 5%;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ms_img_wrp img{
+    width: 100%;
 }
 
 /* media query md */
-@media all and (min-width: 768px) {
-    .portfolio_section .img_wrp{
+/* @media all and (min-width: 768px) {
+    .portfolio_section .ms_img_wrp{
         height: 15rem;
     }
-}
+} */
 
 /* media query lg */
-@media all and (min-width: 992px) {
-    .portfolio_section .img_wrp{
+/* @media all and (min-width: 992px) {
+    .portfolio_section .ms_img_wrp{
         height: 12rem;
     }
-}
+} */
 
 
 
@@ -115,7 +154,7 @@ html{
 .about_section{
     background-color:#1abc9c;
     /* TEST */
-    /* height: 20rem; */
+
 }
 
 .about_wrap{
