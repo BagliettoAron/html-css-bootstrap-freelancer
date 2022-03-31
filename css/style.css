@@ -1,5 +1,11 @@
+/* RESET */
+
+img{
+    width: 100%;
+}
 
 /* COMMON */
+
 :root{
     --ms_primary-color: #1abc9c;
     --ms_secondary-color: white; 
@@ -28,7 +34,15 @@ html{
     vertical-align: super;
 }
 
-
+/* portfolio */
+.ms_img_wrp{
+    width: 100%;
+    border-radius: 5%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
 /* HEADER */
 
 /* nav */
@@ -70,91 +84,62 @@ html{
 
 /* portfolio */
 .portfolio_section{
-    /* TEST */
     padding: 3rem 0;
     background-color: var(--ms_secondary-color);
 }
 
 
-/* portfolio common */
-.ms_img_wrp{
-    width: 100%;
-    border-radius: 5%;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.ms_img_wrp img{
-    width: 100%;
-}
-
-/* media query md */
-/* @media all and (min-width: 768px) {
-    .portfolio_section .ms_img_wrp{
-        height: 15rem;
-    }
-} */
-
-/* media query lg */
-/* @media all and (min-width: 992px) {
-    .portfolio_section .ms_img_wrp{
-        height: 12rem;
-    }
-} */
-
-
-
 /* portfolio house wrap */
 .portfolio_section .house_wrp{
-    /* TEST */
     background-color:#ba4b63 ;
 }
 
 /* portfolio house wrap */
 .portfolio_section .cake_wrp{
-    /* TEST */
     background-color:#1ea4b6 ;
 }
 
 /* portfolio tent wrap */
 .portfolio_section .tent_wrp{
-    /* TEST */
     background-color:#140f0f ;
 }
 
 /* portfolio game wrap */
 .portfolio_section .game_wrp{
-    /* TEST */
     background-color:#1c83c1 ;
 }
 
 /* portfolio safe wrap */
 .portfolio_section .safe_wrp{
-    /* TEST */
     background-color:#0e38b5 ;
 }
 
 /* portfolio submarine wrap */
 .portfolio_section .submarine_wrp{
-    /* TEST */
     background-color:#ccb2a3 ;
 }
 
 /* about section */
-.about_section{
-    background-color:#1abc9c;
-    /* TEST */
-
+.ms_about_section{
+    background-color:var(--ms_primary-color);
+    color: var(--ms_primary-text-color);
 }
 
-.about_wrap{
+.ms_about_section .ms_star{
+    color: var(--ms_primary-text-color);
+}
+
+.ms_about_section .ms_star::before,
+.ms_about_section .ms_star::after{
+    background-color: var(--ms_primary-text-color);
+}
+
+/* .about_wrap{
     background-color: cyan;
     width: 100%;
     /* TEST */
     height: 22rem;
-}
+} */
 
 /* contact me section  */
 .contactme_section{
