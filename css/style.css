@@ -170,6 +170,22 @@ body{
     height: 25rem;
 }
 
+.ms_form_contact{
+    padding: 2rem 0;
+}
+
+.ms_form_contact .form-control{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.ms_form_contact .form-control:focus{
+    box-shadow: none;
+}
+
+
 /* info section */
 .info_section{
     background-color: #3a546d;
