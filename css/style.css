@@ -1,5 +1,10 @@
 
 /* COMMON */
+:root{
+    --ms_primary-color: #1abc9c;
+    --ms_secondary-color: #3a546d; 
+    --ms_primary-text-color: white;
+}
 
 html{
     font-size: 100%;
@@ -10,12 +15,22 @@ body{
     width: 100%;
 }
 
+
 /* HEADER */
 
-.header_container{
-    background-color: #2c3e50;
-    height: 5rem;
-    line-height: 5rem;
+.ms_navbar{
+ background-color: var(--ms_secondary-color);
+}
+
+.ms_navbar .nav-link,
+.ms_navbar .navbar-brand{
+    color: var(--ms_primary-text-color) ;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+.ms_navbar .navbar-toggler span i{
+    color: var(--ms_primary-text-color );
 }
 
 .logo_wrapper{
@@ -32,13 +47,13 @@ body{
 
 /* jumbotron */
 .jumbotron_section{
-    height: 25rem;
+    /* height: 25rem; */
     /* TEST */
     background-color: #1abc9c;
 }
 
 .ms_jumbotron_wrapper{
-    height: 25rem;
+    /* height: 25rem; */
     width: 100%;
     /* TEST */
     background-color: coral;
