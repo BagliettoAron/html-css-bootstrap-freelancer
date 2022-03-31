@@ -19,11 +19,12 @@
 <body>
     <!-- HEADER -->
     <header>
+        <!-- nav -->
         <nav class="ms_navbar navbar-dark navbar navbar-expand-md">
             <div class="container">
               <a class="navbar-brand" href="#">start bootstrap</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fas fa-bars"></i></span>
+                <i class="fas fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto  mb-lg-0">
@@ -39,7 +40,7 @@
                 </ul>
               </div>
             </div>
-          </nav>
+        </nav>
         
     </header>
     <!-- /HEADER -->
@@ -47,50 +48,26 @@
     <!-- MAIN -->
     <main>
         <!-- jumbotron -->
-        <section class="jumbotron_section">
+        <section class="ms_jumbotron_section text-center">
             <div class="container">
-                <div class="row"> 
-                    <div class="offset-1 col-10 offset-md-2 col-md-8 offset-lg-3 col-lg-6">
-                        <div class="ms_jumbotron_wrapper">
-                            <div class="container">
-                                <!-- img avatar -->
-                                <div class="row">
-                                    <div class="offset-1 col-10">
-                                        <img src="img/avatar.svg" alt="">
-                                    </div>
-                                </div>
-                                <!-- bootsrap title -->
-                                <div class="row">
-                                    <!-- se metto un altro container qua? -->
-                                    <div class="col-12">
-                                        <div class="ms_bootstrap_title">
-                                            <h1>start bootstrap</h1>
-                                        </div>
-                                    </div>   
-                                </div>
-                                <div class="row">
-                                    <div class="offset-3 col-6">
-                                        FIXME:
-                                        <div class="ms_rule_and_star align-middle">
-                                            <div class="ms_rule align-middle"></div>
-                                            <i class="fas fa-star align-middle"></i>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="row"></div>
-                            </div>
-                          
-                        </div>
-                    </div>
+                <!-- img avatar -->
+                    <img src="img/avatar.svg" alt="Bootstrap Avatar">
+                <!-- bootsrap title -->
+                <h1 class="text-uppercase mt-4">start bootstrap</h1>
+                <div class="ms_star my-4">
+                    <i class="fas fa-star"></i>
                 </div>
+                <h4 class="text-uppercase pb-4">graphic artist - web designer - illustrator</h4>
             </div>
         </section>
 
         <!-- portfolio -->
-        <section class="portfolio_section">
-            <h2>portfolio</h2>
+        <section class="portfolio_section text-center">
+            <h2 class="text-uppercase">portfolio</h2>
+            <div class="ms_star my-4">
+                <i class="fas fa-star"></i>
+            </div>
+
             <div class="container">
                 <div class="row g-3">
 

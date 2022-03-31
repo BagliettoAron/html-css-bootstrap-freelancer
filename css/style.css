@@ -2,7 +2,8 @@
 /* COMMON */
 :root{
     --ms_primary-color: #1abc9c;
-    --ms_secondary-color: #3a546d; 
+    --ms_secondary-color: white; 
+    --ms_third-color: #3a546d;
     --ms_primary-text-color: white;
 }
 
@@ -11,15 +12,28 @@ html{
     background-color: aqua;
 }
 
-body{
-    width: 100%;
+/* star */
+.ms_star{
+    font-size: 2rem;
+    color: black;
+}
+
+.ms_star::before,
+.ms_star::after{
+    content: "";
+    width: 5rem;
+    height: 3px;
+    background-color: black;
+    display: inline-block;
+    vertical-align: super;
 }
 
 
 /* HEADER */
 
+/* nav */
 .ms_navbar{
- background-color: var(--ms_secondary-color);
+ background-color: var(--ms_third-color);
 }
 
 .ms_navbar .nav-link,
@@ -29,75 +43,38 @@ body{
     font-weight: 550;
 }
 
-.ms_navbar .navbar-toggler span i{
+.ms_navbar .navbar-toggler i{
     color: var(--ms_primary-text-color );
-}
-
-.logo_wrapper{
-    /* TEST */
-    background-color: antiquewhite;
-}
-
-.icon_wrapper{
-    /* TEST */
-    background-color: aquamarine;
 }
 
 /* MAIN */
 
 /* jumbotron */
-.jumbotron_section{
-    /* height: 25rem; */
-    /* TEST */
-    background-color: #1abc9c;
+.ms_jumbotron_section{
+    background-color: var(--ms_primary-color);
+    color: var(--ms_primary-text-color);;
 }
 
-.ms_jumbotron_wrapper{
-    /* height: 25rem; */
-    width: 100%;
-    /* TEST */
-    background-color: coral;
+.ms_jumbotron_section img{
+    width: 10rem;
 }
 
-.ms_jumbotron_wrapper .container{
-    text-align: center;
-    color: white;
+.ms_jumbotron_section .ms_star::before,
+.ms_jumbotron_section .ms_star::after{
+    background-color: var(--ms_primary-text-color);
 }
 
-.ms_jumbotron_wrapper img{
-    width: 40%;
+.ms_jumbotron_section .ms_star{
+    color:var(--ms_primary-text-color)
 }
-
-.ms_bootstrap_title h1{
-    text-transform: uppercase;
-    padding:1rem 0;
-}
-
-/* .ms_rule_and_star{
-    height: 2.2rem;
-}
-
-.ms_rule_and_star i{
-    vertical-align: middle;
-}
-
-.ms_rule{
-    margin:1rem 0 ;
-    width: 6rem;
-    height: .2rem;
-    background-color: white; 
-} */
 
 /* portfolio */
 .portfolio_section{
     /* TEST */
     padding: 3rem 0;
-    background-color: chartreuse;
+    background-color: var(--ms_secondary-color);
 }
 
-.portfolio_section h2{
-    text-align: center;
-}
 
 /* portfolio common */
 .ms_img_wrp{
