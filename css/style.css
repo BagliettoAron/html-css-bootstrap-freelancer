@@ -134,21 +134,19 @@ html{
     background-color: var(--ms_primary-text-color);
 }
 
-/* .about_wrap{
-    background-color: cyan;
-    width: 100%;
-    /* TEST */
-    height: 22rem;
-} */
 
 /* contact me section  */
-.contactme_section{
-    /* TEST */
-    height: 25rem;
+.ms_contactme_section .ms_star{
+    color: var(--ms_third-color);
+}
+
+.ms_contactme_section .ms_star::before,
+.ms_contactme_section .ms_star::after{
+    background-color: var(--ms_third-color);
 }
 
 .ms_form_contact{
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .ms_form_contact .form-control{
@@ -156,10 +154,21 @@ html{
     border-left: 0;
     border-right: 0;
     border-radius: 0;
+    padding-left: 0;
 }
 
 .ms_form_contact .form-control:focus{
     box-shadow: none;
+}
+
+.ms_contactme_section textarea{
+    min-height: 150px;
+}
+
+.ms_contactme_section button{
+    color: var(--ms_primary-text-color);
+    background-color: var(--ms_primary-color);
+    text-align: start;
 }
 
 
