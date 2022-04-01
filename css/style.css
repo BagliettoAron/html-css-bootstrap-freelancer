@@ -10,6 +10,7 @@ img{
     --ms_primary-color: #1abc9c;
     --ms_secondary-color: white; 
     --ms_third-color: #3a546d;
+    --ms_4th-color:#2c3e50;
     --ms_primary-text-color: white;
 }
 
@@ -43,6 +44,31 @@ html{
     justify-content: center;
     overflow: hidden;
 }
+
+/* info section */
+.ms_info_section ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.ms_info_section ul li{
+    display: inline-block;
+    margin: 0 .2rem;
+}
+
+.ms_info_section ul li a{
+    color: inherit;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+
 /* HEADER */
 
 /* nav */
@@ -171,24 +197,35 @@ html{
     text-align: start;
 }
 
-
 /* info section */
-.info_section{
-    background-color: #3a546d;
- 
+.ms_info_section{
+    background-color: var(--ms_third-color);
+}
+
+.ms_info_section h4{
+    text-transform: uppercase;
 }
 
 .info_wrap{
-    /* TEST */
-    background-color: red;
-    border: 2px solid green;
+    color: var(--ms_primary-text-color);
+}
+
+.ms_icon_list{
+    text-align: center;
+}
+
+.ms_start_bootstrap_link a{
+    color: var(--ms_primary-color);
+    text-decoration: none;
+}
+
+.ms_start_bootstrap_link a:hover{
+    text-decoration: underline;
 }
 
 /* footer */
-.footer_section{
+.ms_footer_section{
     width: 100%;
-    background-color: #2c3e50;
-}
-.footer_wrap{
-    
+    background-color: var(--ms_4th-color);
+    color: var(--ms_primary-text-color);
 }
